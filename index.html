@@ -1,9 +1,24 @@
 <html>
  <head>
     <title>My_First_Login</title>
+    <script type="text/javascript">
+     
+     function login()
+      {
+       var uname = document.loginform.username.value();
+       var pwd   = document.loginform.userpasswor.value();
+       
+       if(uname =""|| pwd = "")
+       {
+        alert "Please you should Enter user name and password !";
+       }
+      
+      }
+     
+    </script>
  </head>
 
-    <form method="post" action="login.php" name="loginform">
+    <form method="post" action="login.php" name="loginform" onSubmit ="return :login()">
        
      <table>
        <tr>
